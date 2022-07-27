@@ -1,0 +1,149 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+}
+
+
+
+.main {
+    box-shadow: 0 15px 30px 1px grey;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+
+@media (min-width:600px) {
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 600px;
+    }
+}
+
+.image {
+    background: url(images/image-product-mobile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (min-width:600px) {
+    .image {
+        background-image: none;
+        height: auto;
+
+    }
+}
+
+.image img {
+    display: none;
+}
+
+@media (min-width:600px) {
+    .image img {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+}
+
+.content {
+    padding-bottom: 1.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+@media(min-width:600px) {
+    .content {
+        padding: 3rem;
+        width: 70%;
+        justify-self: center;
+
+    }
+}
+
+.content-title {
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-size: 2.5rem;
+}
+
+.content-subtitle {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: small;
+    color: rgb(155, 154, 154);
+    letter-spacing: 2px;
+}
+
+.content-description {
+    color: rgb(133, 133, 133);
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.prices {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+@media(min-width:600px) {
+    .prices {
+        margin-top: 2rem;
+    }
+}
+
+.content-price {
+    font-family: 'Mirza', cursive;
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin: 0;
+    color: #117864;
+}
+
+.content-old-price {
+    margin-left: 5px;
+    color: #868686;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.button {
+    width: 100%;
+    padding: .8rem;
+    background-color: #117864;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+@media(min-width:600px) {
+    .button {
+        margin-top: 3rem;
+    }
+}
+
+.button:hover {
+    background-color: #0e5043;
+    cursor: pointer;
+
+}
