@@ -1,5 +1,5 @@
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -20,6 +20,10 @@ body {
     background-color: #fff;
     border-radius: 10px;
     margin: 0 10px;
+}
+
+.main-content {
+    max-width: 800px;
 }
 
 
@@ -77,9 +81,9 @@ body {
 }
 
 .content-title {
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Fraunces', serif;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 2.6rem;
     font-size: 2.5rem;
 }
 
@@ -112,7 +116,7 @@ body {
 }
 
 .content-price {
-    font-family: 'Mirza', cursive;
+    font-family: 'Fraunces', serif;
     font-size: 3.6rem;
     font-weight: 700;
     margin: 0;
@@ -120,6 +124,7 @@ body {
 }
 
 .content-old-price {
+
     margin-left: 5px;
     color: #868686;
     font-weight: 400;
